@@ -1,0 +1,104 @@
+.bg-img {
+  /* The image used */
+  background-image: url("img/BgPic.jpg");
+
+  min-height: 880px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Needed to position the navbar */
+  position: relative;
+}
+header {
+  position: relative;
+  background-color: black;
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+img.logo{
+   position:absolute;
+   margin-left: 30px;
+   margin-top: 20px;
+}
+/* img.footerlogo{
+   position:absolute;
+
+   margin-top: 20px;
+} */
+
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+  }
+  header video {
+    display: none;
+  }
+}
+nav{padding: 50px 50px;}
+nav a{
+  color: #f2f2f2;
+  text-align: center;
+  font-size: 27px;
+}
+
+footer{
+  background-color: #142666;
+  height:200px;
+}
+footer a{
+  color:white;
+}
+
+.heading{text-align: center;
+font-size: 97px;
+color: white;
+padding-top:70px;}
+h6{color:white;}
+img.center-image {
+    display: block;
+    padding:100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.navfooter{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+color: #2196F3;
+padding: 10px;
+}
+.col-md-auto{
+  color:white;
+  font-size:30px;
+}
+.bottomright {
+     position: fixed;
+     bottom: 0px;
+     right: 0px;
+     color:white;
+}
